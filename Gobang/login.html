@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="504 Team & Bootstrap contributors">
+
+    <link rel="icon" href="img/chess-piece-icon.png" type="image/x-icon">
+    <title>登录 · 五子棋</title>
+
+    <!-- Import Bootstrap v4.6.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+    <!-- Import custom style -->
+    <link href="css/general.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="text-center pt-5">
+            <img src="img/login_img.png" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <form class="form-signin border rounded-lg" novalidate>
+            <div class="text-center mb-4 mt-3">
+              <img class="mb-4" src="img/chess-piece.png" alt="" width="72" height="72">
+              <h1 class="h4 font-weight-normal">登录 · 五子棋</h1>
+            </div>
+      
+            <div id="account" class="form-label-group mx-3">
+              <input type="text" id="inputID" class="form-control" placeholder=" " name="username" :class="{ 'is-valid': isValid, 'is-invalid': isInvalid }">
+              <label for="ID">账号</label>
+            </div>
+      
+            <div id="password" class="form-label-group mx-3">
+              <input type="password" id="inputPassword" class="form-control" placeholder=" " name="password" :class="{ 'is-valid': isValid, 'is-invalid': isInvalid }">
+              <label for="inputPassword">密码</label>
+              <div class="invalid-feedback">
+                Please input password.
+              </div>
+            </div>
+      
+            <div class="container-fluid mb-3 mt-5">
+              <div class="row justify-content-center">
+                <div class="text-center col-4">
+                  <button class="btn btn-primary btn-block" type="submit">登 录</button>
+                </div>
+                <div class="text-center col-4">
+                  <button class="btn btn-primary btn-block" type="submit">注 册</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          <p class="mt-5 mb-3 text-muted text-center">504 Team & Bootstrap &copy; 2021</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
