@@ -8,4 +8,5 @@
 
 使用 Bootstrap / Vue.js 3 制作的五子棋 Web 版前端页面
 
-Making……
+此处是一段测试文字
+~~~~~~sadfjhjsfhjh~~~~~
